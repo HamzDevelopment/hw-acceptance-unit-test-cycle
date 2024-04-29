@@ -1,8 +1,8 @@
 <!--  app/views/movies/find_movies_with_same_director.html.erb -->
-<h2>Movies with the same Director</h2>
+<h2>Movies with the Same Director as <%= @movie.director %></h2>
 
 <ul>
-  <% @movies.each do |movie| %>
+  <% @movies_with_same_director.each do |movie| %>
      <li><%= movie.title %></li>
      <li><%= movie.rating %></li>
      <li><%= movie.director %></li>
